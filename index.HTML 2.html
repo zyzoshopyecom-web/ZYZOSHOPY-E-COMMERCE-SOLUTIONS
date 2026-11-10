@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZYZOSHOPY E-COMMERCE SOLUTIONS | Marketplace Management Agency, Coimbatore</title>
+<meta name="description" content="ZYZOSHOPY E-COMMERCE SOLUTIONS – full-service e-commerce management and marketplace growth agency in Coimbatore. Listings, creatives, advertising and reporting for Amazon, Flipkart, Meesho, Myntra, AJIO and IndiaMART.">
+<meta property="og:title" content="ZYZOSHOPY E-COMMERCE SOLUTIONS | Marketplace Management Agency, Coimbatore">
+<meta property="og:description" content="Listings, creatives, advertising and reporting for Amazon, Flipkart, Meesho, Myntra, AJIO and IndiaMART.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0A1647">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0A1647; --navy2:#13236B; --orange:#F97316; --orange-d:#C75A08;
+  --ink:#0A1647; --text:#3A4468; --bg:#FFFFFF; --soft:#F4F6FC; --line:#DDE2F2;
+  --r:18px; --display:'Bricolage Grotesque','Trebuchet MS',sans-serif; --body:'DM Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--body);color:var(--text);background:var(--bg);line-height:1.65;font-size:17px;overflow-x:hidden}
+h1,h2,h3{font-family:var(--display);color:var(--ink);line-height:1.08;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1160px,92%);margin-inline:auto}
+section{padding:110px 0}
+h2{font-size:clamp(2rem,4.5vw,3.3rem);max-width:16ch}
+.lead{max-width:60ch;margin-top:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:700;border:2px solid transparent;cursor:pointer;font:inherit;font-weight:700;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--orange);color:#fff}.btn.primary:hover{background:var(--orange-d)}
+.btn.ghost{border-color:rgba(255,255,255,.4);color:#fff}.btn.ghost:hover{background:#fff;color:var(--navy)}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s}
+header.solid{background:rgba(10,22,71,.94);backdrop-filter:blur(10px);box-shadow:0 4px 24px rgba(0,0,0,.2)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;color:#fff;font-size:1.15rem;letter-spacing:.01em}
+.brand svg{width:34px;height:34px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.1}
+.brand-text small{font-family:var(--body);font-weight:700;font-size:.6rem;letter-spacing:.16em;color:var(--orange);margin-top:3px}
+nav ul{display:flex;gap:30px;list-style:none}
+nav a{color:#cfd6f5;font-weight:500;font-size:.95rem;padding:6px 0;border-bottom:2px solid transparent;transition:.2s}
+nav a:hover,nav a.on{color:#fff;border-color:var(--orange)}
+.menu{display:none;background:none;border:0;color:#fff;font-size:1.7rem;cursor:pointer}
+
+/* hero */
+.hero{background:var(--navy);color:#fff;padding:150px 0 0;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:640px;height:640px;right:-180px;top:-120px;border-radius:50%;border:70px solid rgba(249,115,22,.14)}
+.hero:after{content:"";position:absolute;width:420px;height:420px;left:-160px;bottom:60px;border-radius:50%;background:radial-gradient(circle,rgba(75,100,230,.35),transparent 70%)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:center}
+.hero h1{color:#fff;font-size:clamp(2.7rem,7vw,5.6rem);font-weight:800}
+.hero h1 span{display:block;color:var(--orange)}
+.hero p{max-width:50ch;margin:26px 0 34px;color:#cfd6f5;font-size:1.1rem}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.tag{display:inline-block;margin-bottom:22px;padding:7px 16px;border:1px solid rgba(255,255,255,.25);border-radius:999px;color:#cfd6f5;font-size:.9rem}
+/* growth chart (hero visual) */
+.chart{background:#fff;border-radius:26px;padding:26px 26px 20px;color:var(--ink);box-shadow:0 30px 60px rgba(0,0,0,.35);transform:rotate(2deg)}
+.chart small{color:var(--text);display:block}
+.chart b{font-family:var(--display);font-size:2.4rem;line-height:1.1}
+.bars{display:flex;align-items:flex-end;gap:10px;height:170px;margin-top:18px;border-bottom:2px solid var(--line)}
+.bars i{flex:1;background:var(--navy);border-radius:8px 8px 0 0;height:0;transition:height 1s cubic-bezier(.2,.8,.2,1)}
+.bars i:last-child{background:var(--orange)}
+.chart .row{display:flex;justify-content:space-between;margin-top:10px;font-size:.8rem}
+.chart .pill{display:inline-block;background:#FFF1E6;color:var(--orange-d);font-weight:700;padding:3px 10px;border-radius:999px;font-size:.8rem;margin-left:8px;vertical-align:middle}
+.loaded .bars i{height:var(--h)}
+/* hero entrance: the one orchestrated moment */
+.hero .in{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s}
+.loaded .hero .in{opacity:1;transform:none}
+.loaded .hero .in:nth-child(2){transition-delay:.12s}.loaded .hero .in:nth-child(3){transition-delay:.24s}.loaded .hero .in:nth-child(4){transition-delay:.36s}
+/* marquee */
+.marquee{margin-top:90px;border-top:1px solid rgba(255,255,255,.15);padding:22px 0;overflow:hidden;position:relative;z-index:2}
+.track{display:flex;gap:56px;width:max-content;animation:slide 28s linear infinite;font-family:var(--display);font-weight:700;font-size:1.6rem;color:#8d9ad6}
+.track span:nth-child(odd){color:#fff}
+.marquee:hover .track{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* about */
+.about .grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.about p+p{margin-top:16px}
+.stack{display:grid;gap:18px}
+.mv{padding:28px;border-radius:var(--r);background:var(--soft);border-left:6px solid var(--orange)}
+.mv:nth-child(2){border-color:var(--navy);margin-left:34px}
+.mv{box-shadow:0 12px 28px -14px rgba(10,22,71,.25);transition:transform .25s,box-shadow .25s}
+.mv:hover{transform:translateY(-4px);box-shadow:0 22px 38px -16px rgba(10,22,71,.32)}
+.mv h3{font-size:1.35rem;margin-bottom:8px}
+
+/* services (tabs) */
+.services{background:var(--soft)}
+.tabs{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;margin-top:50px;align-items:start}
+.tablist{display:grid;gap:8px}
+.tablist button{text-align:left;font:inherit;font-weight:700;color:var(--ink);background:#fff;border:2px solid transparent;border-radius:14px;padding:16px 20px;cursor:pointer;transition:.2s;display:flex;justify-content:space-between;gap:10px}
+.tablist button:after{content:"+";color:var(--orange);font-size:1.3rem;line-height:1}
+.tablist button:hover{border-color:var(--line)}
+.tablist button[aria-selected=true]{background:var(--navy);color:#fff}
+.tablist button[aria-selected=true]:after{content:"–"}
+.panel{background:#fff;border-radius:var(--r);padding:38px;position:sticky;top:96px;min-height:340px;border-top:6px solid var(--orange);box-shadow:0 24px 44px -20px rgba(10,22,71,.28)}
+.panel h3{font-size:1.8rem;margin-bottom:18px}
+.panel ul{list-style:none;display:grid;gap:12px}
+.panel li{padding-left:30px;position:relative}
+.panel li:before{content:"";position:absolute;left:0;top:.45em;width:14px;height:8px;border-left:3px solid var(--orange);border-bottom:3px solid var(--orange);transform:rotate(-45deg)}
+.panel.swap li{animation:pop .4s both}
+@keyframes pop{from{opacity:0;transform:translateX(-10px)}}
+
+/* process */
+.steps{margin-top:56px;display:grid;grid-template-columns:repeat(6,1fr);gap:0;position:relative}
+.steps:before{content:"";position:absolute;left:5%;right:5%;top:27px;height:3px;background:var(--line)}
+.steps .fill{position:absolute;left:5%;top:27px;height:3px;background:var(--orange);width:0;transition:width .5s}
+.step{position:relative;text-align:center;padding:0 8px;cursor:pointer;background:none;border:0;font:inherit;color:inherit}
+.step .n{width:56px;height:56px;margin:0 auto 14px;border-radius:50%;background:#fff;border:3px solid var(--line);display:grid;place-items:center;font-family:var(--display);font-weight:800;color:var(--ink);position:relative;z-index:2;transition:.3s}
+.step.done .n{border-color:var(--orange)}
+.step.cur .n{background:var(--orange);border-color:var(--orange);color:#fff;transform:scale(1.15)}
+.step h3{font-size:1rem;line-height:1.25}
+.detail{margin-top:42px;background:var(--navy);color:#dfe4fa;border-radius:var(--r);padding:34px 38px;font-size:1.2rem;min-height:110px;display:flex;align-items:center}
+
+/* marketplaces + industries */
+.mk{background:var(--navy);color:#cfd6f5}
+.mk h2{color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+.chips span{padding:14px 26px;border-radius:999px;border:2px solid rgba(255,255,255,.2);font-family:var(--display);font-weight:700;font-size:1.25rem;color:#fff;transition:.2s}
+.chips span:hover{background:var(--orange);border-color:var(--orange);transform:translateY(-3px);box-shadow:0 12px 20px -8px rgba(0,0,0,.4)}
+.mk .ind{margin-top:70px;display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:start}
+.mk h3{color:#fff;font-size:1.9rem}
+.ind ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ind li{padding:16px 18px;background:rgba(255,255,255,.07);border-radius:12px;border-left:4px solid var(--orange);font-size:.98rem}
+
+/* why */
+.why ul{list-style:none;margin-top:46px;display:grid;grid-template-columns:repeat(2,1fr);gap:0 60px}
+.why li{padding:22px 0;border-bottom:1px solid var(--line);display:flex;gap:16px;font-weight:500;color:var(--ink)}
+.why li:before{content:"✓";flex:none;width:28px;height:28px;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-size:.85rem}
+.why h2{max-width:22ch}
+.commit{margin-top:70px;box-shadow:0 30px 50px -24px rgba(10,22,71,.5);padding:50px;border-radius:26px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:#cfd6f5;display:grid;grid-template-columns:.8fr 1.2fr;gap:40px}
+.commit h3{color:#fff;font-size:2rem}.commit p+p{margin-top:12px}
+
+/* clients */
+.clients{background:var(--soft)}
+.clients{position:relative;overflow:hidden}
+.clients:before{content:"";position:absolute;width:520px;height:520px;right:-200px;top:-220px;border-radius:50%;border:56px solid rgba(249,115,22,.09);pointer-events:none}
+.clients .wrap{position:relative}
+.logos{list-style:none;margin-top:52px;display:flex;flex-wrap:wrap;justify-content:center;gap:24px;perspective:1100px}
+.logo-card{
+  --rx:0deg;--ry:0deg;--ty:0px;
+  flex:0 1 calc((100% - 48px)/3);min-height:230px;padding:30px 26px 24px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;text-align:center;
+  background:#fff;border:2px solid var(--line);border-radius:var(--r);position:relative;
+  box-shadow:0 1px 0 #fff inset,0 2px 4px rgba(10,22,71,.05),0 14px 30px -12px rgba(10,22,71,.16);
+  transform:perspective(900px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(var(--ty));
+  transform-style:preserve-3d;
+  transition:transform .25s ease,box-shadow .3s,border-color .3s,opacity .7s;
+}
+.logo-card:after{content:"";position:absolute;left:26px;right:26px;bottom:-2px;height:4px;border-radius:4px 4px 0 0;background:var(--orange);transform:scaleX(0);transition:transform .35s}
+.logo-card:hover{--ty:-8px;border-color:rgba(249,115,22,.55);box-shadow:0 1px 0 #fff inset,0 4px 8px rgba(10,22,71,.06),0 32px 48px -16px rgba(10,22,71,.30)}
+.logo-card:hover:after{transform:scaleX(1)}
+.logo-area{width:100%;height:124px;display:flex;align-items:center;justify-content:center;transform-style:preserve-3d}
+.logo-stage{position:relative;overflow:hidden;flex:none;width:min(var(--w),100%);aspect-ratio:var(--ar);transform:translateZ(30px);transition:transform .3s}
+.logo-card:hover .logo-stage{transform:translateZ(30px) scale(1.06)}
+.logo-stage img{position:absolute;display:block;height:auto;max-width:none;-webkit-user-drag:none;user-select:none}
+.logo-name{font-family:var(--display);font-weight:700;font-size:.86rem;letter-spacing:.04em;text-transform:uppercase;color:#6B7499;transition:color .3s;transform:translateZ(12px)}
+.logo-card:hover .logo-name{color:var(--ink)}
+.js .logo-card:not(.shown){opacity:0;transform:translateY(28px)}
+.js .logo-card{transition-delay:0s,0s,0s,calc(var(--i)*90ms)}
+.js .logo-card.shown{transition-delay:0s,0s,0s,0s}
+
+/* contact */
+.contact .box{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.contact h2{max-width:14ch}
+.info{margin-top:30px;display:grid;gap:14px}
+.info a{display:flex;align-items:center;gap:14px;font-weight:700;color:var(--ink)}
+.info b{width:46px;height:46px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:1.1rem;flex:none}
+form{background:var(--soft);padding:34px;border-radius:var(--r);display:grid;gap:16px}
+label{font-weight:700;color:var(--ink);font-size:.92rem;display:grid;gap:6px}
+.contact .box>*{min-width:0}
+input,select,textarea{width:100%;min-width:0;max-width:100%;font:inherit;padding:13px 15px;border:2px solid var(--line);border-radius:12px;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--orange)}
+.err{color:#B42318;font-size:.85rem;font-weight:500;min-height:1em}
+footer{background:var(--navy);color:#9aa6d8;padding:34px 0;font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.top{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border-radius:50%;border:0;background:var(--orange);color:#fff;font-size:1.3rem;cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:40}
+.top.show{opacity:1;pointer-events:auto}
+
+@media(max-width:900px){
+  section{padding:80px 0}
+  .menu{display:block}
+  nav{position:absolute;top:72px;left:0;right:0;background:var(--navy);max-height:0;overflow:hidden;transition:max-height .35s}
+  nav.open{max-height:360px}
+  nav ul{flex-direction:column;gap:0;padding:10px 6% 20px}
+  nav a{display:block;padding:12px 0}
+  .hero .wrap,.about .grid,.tabs,.mk .ind,.commit,.contact .box{grid-template-columns:1fr}
+  .chart{transform:none;max-width:420px}
+  .mv:nth-child(2){margin-left:0}
+  .panel{position:static}
+  .why ul,.ind ul{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(3,1fr);row-gap:28px}.steps:before,.steps .fill{display:none}
+  .commit{padding:32px}
+  .logo-card{flex-basis:calc((100% - 24px)/2)}
+}
+@media(max-width:560px){
+  .brand-text small{font-size:.5rem;letter-spacing:.1em}
+  .brand{font-size:1rem}
+  .logos{gap:16px;margin-top:36px}
+  .logo-card{flex-basis:100%;max-width:420px;min-height:190px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .hero .in{opacity:1;transform:none}.bars i{height:var(--h)}
+  .js .logo-card:not(.shown){opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="ZYZOSHOPY E-COMMERCE SOLUTIONS home">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 5h27l-17 17h15v6H4l17-17H7z" fill="#fff"/><path d="M5 30c10 3 22-2 28-14l3 3 1-10-9 4 3 2C27 26 16 30 5 30z" fill="#F97316"/></svg>
+      <span class="brand-text">ZYZOSHOPY<small>E-COMMERCE SOLUTIONS</small></span>
+    </a>
+    <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#marketplaces">Marketplaces</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <span class="tag in">Coimbatore, Tamil Nadu, India</span>
+      <h1 class="in">Your business, <span>our e-commerce expertise.</span></h1>
+      <p class="in">Full-service e-commerce management and marketplace growth for brands, manufacturers, wholesalers and online sellers.</p>
+      <div class="cta in">
+        <a class="btn primary" href="#contact">Start your growth plan</a>
+        <a class="btn ghost" href="#services">See our services</a>
+      </div>
+    </div>
+    <div class="chart in" aria-hidden="true">
+      <small>Marketplace sales, month by month</small>
+      <b>Growth <span class="pill">on track</span></b>
+      <div class="bars">
+        <i style="--h:28%"></i><i style="--h:38%"></i><i style="--h:35%"></i><i style="--h:52%"></i><i style="--h:63%"></i><i style="--h:78%"></i><i style="--h:100%"></i>
+      </div>
+      <div class="row"><span>Onboard</span><span>Optimise</span><span>Scale</span></div>
+    </div>
+  </div>
+  <div class="marquee" aria-label="Marketplaces we support">
+    <div class="track" id="track"></div>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="wrap grid">
+    <div>
+      <h2>Smart solutions for stronger online sales.</h2>
+      <p class="lead">ZYZOSHOPY E-COMMERCE SOLUTIONS is a full-service agency that helps brands, manufacturers, wholesalers, startups and online sellers set up, manage and grow across leading marketplaces.</p>
+      <p>We cover the whole journey: marketplace onboarding, catalogue management, listing optimisation, creative content, advertising, account operations and performance reporting.</p>
+      <p>Our approach combines marketplace knowledge, practical execution and data-driven optimisation.</p>
+    </div>
+    <div class="stack">
+      <div class="mv"><h3>Our mission</h3><p>To empower businesses with professional e-commerce solutions, strategic marketplace management and data-driven growth practices that build a stronger online presence.</p></div>
+      <div class="mv"><h3>Our vision</h3><p>To become a trusted e-commerce growth partner for brands and sellers across India and international markets by delivering reliable, practical and result-focused marketplace solutions.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <h2>Everything your marketplace store needs.</h2>
+    <p class="lead">Pick a service to see what is included.</p>
+    <div class="tabs">
+      <div class="tablist" role="tablist" id="tablist" aria-label="Services"></div>
+      <div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <h2>How we work with you.</h2>
+    <p class="lead">Six steps from first conversation to ongoing growth. Select a step to read more.</p>
+    <div class="steps" id="steps"><div class="fill" id="fill"></div></div>
+    <div class="detail" id="detail" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="mk" id="marketplaces">
+  <div class="wrap">
+    <h2>Marketplaces we manage.</h2>
+    <p class="lead">We support businesses on leading online marketplaces, based on product category and business needs.</p>
+    <div class="chips">
+      <span>Amazon</span><span>Flipkart</span><span>Meesho</span><span>Myntra</span><span>AJIO</span><span>IndiaMART</span><span>Other marketplaces</span>
+    </div>
+    <div class="ind">
+      <h3>Industries we support</h3>
+      <ul>
+        <li>Manufacturers and wholesalers</li>
+        <li>Jewellery and fashion brands</li>
+        <li>Healthcare and medical apparel</li>
+        <li>Home, kitchen and lifestyle sellers</li>
+        <li>Startups and D2C brands</li>
+        <li>Small and medium-sized businesses</li>
+        <li>Existing sellers needing operational and growth support</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <h2>Why choose ZYZOSHOPY E-COMMERCE SOLUTIONS?</h2>
+    <ul>
+      <li>End-to-end e-commerce management under one service partner</li>
+      <li>Marketplace-focused listing and catalogue expertise</li>
+      <li>Creative product presentation for online shoppers</li>
+      <li>Performance-oriented advertising management</li>
+      <li>Structured seller account operations</li>
+      <li>Consistent issue monitoring and follow-up</li>
+      <li>Clear reporting and practical recommendations</li>
+      <li>Focus on sustainable, long-term business development</li>
+    </ul>
+    <div class="commit">
+      <h3>Our commitment</h3>
+      <div>
+        <p>We aim to make e-commerce simpler and more manageable for businesses.</p>
+        <p>We believe in organised execution, consistent communication and practical marketplace support. We work alongside our clients to strengthen their product presence, improve operational efficiency and find opportunities for online growth.</p>
+        <p>Our goal is to build reliable business partnerships and support brands throughout their e-commerce journey.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="clients" id="clients">
+  <div class="wrap">
+    <h2>Brands we support.</h2>
+    <p class="lead">We are proud to work with businesses across different product categories.</p>
+    <ul class="logos" id="logos">
+      <li class="logo-card" style="--w:250px;--ar:2.492;--i:0">
+        <div class="logo-area"><div class="logo-stage"><img src="images/clients/bizilbig-logo.png" alt="BizilBig – We offer stylish, affordable products for every space" width="300" height="300" loading="lazy" decoding="async" style="width:95.03%;left:1.69%;top:-54.97%"></div></div>
+        <span class="logo-name">BizilBig</span>
+      </li>
+      <li class="logo-card" style="--w:255px;--ar:2.987;--i:1">
+        <div class="logo-area"><div class="logo-stage"><img src="images/clients/livzing-logo.png" alt="Livzing logo" width="600" height="450" loading="lazy" decoding="async" style="width:92.61%;left:3.62%;top:-54.20%"></div></div>
+        <span class="logo-name">Livzing</span>
+      </li>
+      <li class="logo-card" style="--w:270px;--ar:3.293;--i:2">
+        <div class="logo-area"><div class="logo-stage"><img src="images/clients/augrav-logo.png" alt="AuGrav – Personalized Jewelry logo" width="400" height="400" loading="lazy" decoding="async" style="width:96.71%;left:1.64%;top:-106.85%"></div></div>
+        <span class="logo-name">AuGrav – Personalized Jewels</span>
+      </li>
+      <li class="logo-card" style="--w:200px;--ar:2.080;--i:3">
+        <div class="logo-area"><div class="logo-stage"><img src="images/clients/the-root-and-rise-logo.png" alt="The Root &amp; Rise – Luxury Simplified logo" width="814" height="361" loading="lazy" decoding="async" style="width:102.07%;left:-0.34%;top:4.24%"></div></div>
+        <span class="logo-name">The Root &amp; Rise</span>
+      </li>
+      <li class="logo-card" style="--w:122px;--ar:1.000;--i:4">
+        <div class="logo-area"><div class="logo-stage"><img src="images/clients/sri-vinayaga-jewellers-logo.jpeg" alt="Sri Vinayaga Jewellers (SVJ) logo" width="1254" height="1254" loading="lazy" decoding="async" style="width:100.00%;left:0.00%;top:0.00%"></div></div>
+        <span class="logo-name">Sri Vinayaga Jewellers</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap box">
+    <div>
+      <h2>Let's build your online business together.</h2>
+      <p class="lead">Tell us about your products and marketplaces. We will reply with practical next steps.</p>
+      <div class="info">
+        <a href="tel:+918489177623"><b>☎</b>+91 84891 77623</a>
+        <a href="https://wa.me/918489177623" target="_blank" rel="noopener"><b>✉</b>Message us on WhatsApp</a>
+        <span style="display:flex;gap:14px;align-items:center;font-weight:700;color:var(--ink)"><b style="width:46px;height:46px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center">⌖</b>Coimbatore, Tamil Nadu, India</span>
+      </div>
+    </div>
+    <form id="form" novalidate>
+      <label>Your name<input id="fn" autocomplete="name"><span class="err" data-for="fn"></span></label>
+      <label>Phone number<input id="fp" type="tel" autocomplete="tel"><span class="err" data-for="fp"></span></label>
+      <label>What do you need?
+        <select id="fs"></select>
+      </label>
+      <label>Tell us about your business<textarea id="fm" rows="4"></textarea><span class="err" data-for="fm"></span></label>
+      <button class="btn primary" type="submit">Send on WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© <span id="yr"></span> ZYZOSHOPY E-COMMERCE SOLUTIONS</span><span>Your Business, Our E-Commerce Expertise.</span></div></footer>
+<button class="top" id="top-btn" aria-label="Back to top">↑</button>
+
+<script>
+const services=[
+ ["Marketplace account management",["Day-to-day seller account management and support","Account health monitoring","Catalogue maintenance and operational coordination","Marketplace issue identification and follow-up"]],
+ ["Product listing and catalogue",["Product listing creation and optimisation","SEO-focused titles and bullet points","Product descriptions and keyword research","Product attributes and variation setup","Catalogue updates and maintenance"]],
+ ["Product images and creative content",["Marketplace-compliant main product images","Lifestyle and feature images","Product feature infographics and dimension images","A+ Content planning and development","Professional product presentation"]],
+ ["Marketplace advertising",["Sponsored advertising campaign setup","Keyword targeting and budget management","Campaign performance monitoring","Optimisation using ACOS, ROAS and TACOS","Performance analysis and improvement recommendations"]],
+ ["Sales growth and optimisation",["Competitor and category analysis","Pricing and promotional recommendations","Conversion improvement suggestions","Sales and advertising performance reviews"]],
+ ["Brand store and enhanced content",["Brand storefront planning","A+ Content structure and development","Brand storytelling","Professional product presentation"]],
+ ["E-commerce website solutions",["E-commerce website planning","Online storefront presentation","Product uploads and catalogue support","Support for businesses building their own online sales channels"]],
+ ["Reporting and business support",["Periodic sales performance reports","Advertising performance summaries","Catalogue progress tracking","Identification of operational issues","Practical business recommendations and next steps"]]
+];
+const steps=[
+ ["Business understanding","We learn your products, business objectives, target customers and existing sales channels."],
+ ["Account and market analysis","We review your marketplace presence, catalogue quality, competitors, pricing and growth opportunities."],
+ ["Catalogue development","We prepare product content, keywords, attributes, variations and creative requirements."],
+ ["Marketplace execution","We coordinate account setup, product uploads, catalogue updates and product launch activities."],
+ ["Advertising and optimisation","We manage advertising campaigns, monitor performance and make data-informed improvements."],
+ ["Reporting and growth planning","We share progress reports, point out challenges and recommend practical next steps."]
+];
+const $=s=>document.querySelector(s);
+
+/* load-in */
+addEventListener('load',()=>requestAnimationFrame(()=>document.body.classList.add('loaded')));
+$('#yr').textContent=new Date().getFullYear();
+
+/* marquee */
+const names=["Amazon","Flipkart","Meesho","Myntra","AJIO","IndiaMART"];
+$('#track').innerHTML=[...names,...names,...names,...names].map(n=>`<span>${n}</span>`).join('');
+
+/* header, scroll spy, back to top */
+const hdr=$('#hdr'),tb=$('#top-btn'),links=[...document.querySelectorAll('nav a')];
+const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+function onScroll(){
+  hdr.classList.toggle('solid',scrollY>30);
+  tb.classList.toggle('show',scrollY>700);
+  let cur=-1;secs.forEach((s,i)=>{if(s.getBoundingClientRect().top<140)cur=i});
+  links.forEach((a,i)=>a.classList.toggle('on',i===cur));
+}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+tb.onclick=()=>scrollTo({top:0});
+
+/* mobile menu */
+const menu=$('#menu'),nav=$('#nav');
+menu.onclick=()=>{const o=nav.classList.toggle('open');menu.setAttribute('aria-expanded',o);menu.textContent=o?'✕':'☰'};
+links.forEach(a=>a.onclick=()=>{nav.classList.remove('open');menu.textContent='☰';menu.setAttribute('aria-expanded',false)});
+
+/* services tabs */
+const tl=$('#tablist'),panel=$('#panel');
+services.forEach((s,i)=>{
+  const b=document.createElement('button');
+  b.role='tab';b.id='t'+i;b.textContent=s[0];
+  b.onclick=()=>showTab(i);
+  b.onkeydown=e=>{
+    if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();const n=(i+(e.key==='ArrowDown'?1:services.length-1))%services.length;showTab(n);$('#t'+n).focus()}
+  };
+  tl.appendChild(b);
+});
+function showTab(i){
+  [...tl.children].forEach((b,j)=>{b.setAttribute('aria-selected',i===j);b.tabIndex=i===j?0:-1});
+  panel.setAttribute('aria-labelledby','t'+i);
+  panel.classList.remove('swap');void panel.offsetWidth;panel.classList.add('swap');
+  panel.innerHTML=`<h3>${services[i][0]}</h3><ul>${services[i][1].map((t,k)=>`<li style="animation-delay:${k*60}ms">${t}</li>`).join('')}</ul>`;
+}
+showTab(0);
+
+/* process stepper */
+const st=$('#steps');
+steps.forEach((s,i)=>{
+  const b=document.createElement('button');b.className='step';
+  b.innerHTML=`<div class="n">${i+1}</div><h3>${s[0]}</h3>`;
+  b.onclick=()=>setStep(i);st.appendChild(b);
+});
+function setStep(i){
+  [...st.querySelectorAll('.step')].forEach((b,j)=>{b.classList.toggle('cur',j===i);b.classList.toggle('done',j<i);b.setAttribute('aria-current',j===i)});
+  $('#fill').style.width=(90*i/(steps.length-1))+'%';
+  $('#detail').textContent=steps[i][1];
+}
+setStep(0);
+
+/* contact form */
+$('#fs').innerHTML=services.map(s=>`<option>${s[0]}</option>`).join('')+'<option>Not sure yet</option>';
+$('#form').addEventListener('submit',e=>{
+  e.preventDefault();
+  const f={fn:$('#fn').value.trim(),fp:$('#fp').value.trim(),fm:$('#fm').value.trim()};
+  const msgs={fn:'Enter your name.',fp:'Enter a phone number with at least 10 digits.',fm:'Tell us a little about your business.'};
+  const bad={fn:!f.fn,fp:f.fp.replace(/\D/g,'').length<10,fm:!f.fm};
+  let ok=true;
+  for(const k in bad){document.querySelector(`[data-for=${k}]`).textContent=bad[k]?msgs[k]:'';if(bad[k])ok=false}
+  if(!ok)return;
+  const text=`Hello ZYZOSHOPY E-COMMERCE SOLUTIONS, I'm ${f.fn} (${f.fp}).\nInterested in: ${$('#fs').value}\n${f.fm}`;
+  open('https://wa.me/918489177623?text='+encodeURIComponent(text),'_blank','noopener');
+});
+
+/* client logos: reveal on scroll + gentle 3D tilt (mouse only) */
+(()=>{
+  const cards=[...document.querySelectorAll('.logo-card')];
+  if('IntersectionObserver' in window){
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('shown');io.unobserve(e.target)}}),{threshold:.15});
+    cards.forEach(c=>io.observe(c));
+  }else cards.forEach(c=>c.classList.add('shown'));
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches||!matchMedia('(hover:hover)').matches)return;
+  cards.forEach(c=>{
+    c.addEventListener('pointermove',e=>{
+      if(e.pointerType!=='mouse')return;
+      const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+      c.style.setProperty('--ry',(x*8).toFixed(2)+'deg');c.style.setProperty('--rx',(-y*8).toFixed(2)+'deg');
+    });
+    c.addEventListener('pointerleave',()=>{c.style.setProperty('--rx','0deg');c.style.setProperty('--ry','0deg')});
+  });
+})();
+</script>
+</body>
+</html>
